@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sneha Jagtap | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sneha Jagtap</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="intro-text">
+      <h1>Hi, I'm Sneha 👋</h1>
+      <p>
+        A passionate <span class="highlight">Full Stack Web Developer</span> who loves building websites and exploring new technologies.
+      </p>
+      <a href="#projects" class="btn">See My Projects</a>
+    </div>
+    <div class="hero-image">
+      <img src="ProfileImage.png.jpg" alt="Profile Image" />
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-icon">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="User Icon">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am a Computer Science graduate and a self-motivated developer with experience in building responsive websites using HTML, CSS, JavaScript, and React.
+        I’m also exploring backend technologies like basics of Java and database management using MySQL. 
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul class="skill-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React.js</li>
+      <li>Java(Basics)</li>
+      <li>MySQL</li>  
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="zomato-clone.png" alt="Zomato Clone">
+        <h3>Zomato Clone</h3>
+        <p>Fully functional food ordering clone built using HTML, CSS & JS with cart, search, and checkout flow.</p>
+        
+      </div>
+
+      <div class="project-card">
+        <img src="weather-app.png" alt="Weather App">
+        <h3>Weather App</h3>
+        <p>React-based weather app using OpenWeatherMap API with dynamic city background and emojis.</p>
+        
+      </div>
+
+      <div class="project-card">
+        <img src="Ecomarket-website.png" alt="Ecomarket Website">
+        <h3>Ecomarket Website</h3>
+        <p>A modern homepage for an eco-friendly marketplace, built using HTML, CSS, and smooth transitions.</p>
+        
+      </div>
+
+      <div class="project-card">
+        <img src="Studentsectionmanagement-system.png" alt="Student Management">
+        <h3>Student Section Management System</h3>
+        <p>Mini project to manage student data using HTML forms, JS, and basic database connectivity.</p>
+        
+      </div>
+
+      <div class="project-card">
+        <img src="spamdetection.png.jpg" alt="Spam Detection">
+        <h3>Spam Product Review Detection</h3>
+        <p>Flask-based deep learning website using BERT to detect fake product reviews. Includes scraping, preprocessing, and prediction.</p>
+        
+      </div>
+
+      </div> <!-- closing project-grid -->
+
+    <div class="resume-button">
+      <a href="Sneha_Jagtap-Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="icons">
+      <p><i class="fas fa-envelope"></i> <a href="mailto:jagtapsneha39@gmail.com">jagtapsneha39@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sneha-jagtap-83b750224" target="_blank">LinkedIn</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/18snehaa" target="_blank">GitHub</a></p>
+    </div>
+    <p>© 2024 Sneha Jagtap</p>
+  </section>
+
+  <!-- Scroll to top button -->
+  <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+  <!-- Optional JS for scroll-to-top -->
+  <script>
+    const btn = document.getElementById('scrollToTopBtn');
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    };
+    btn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+
+  </script>
+</body>
+</html>

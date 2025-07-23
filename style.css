@@ -1,0 +1,384 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Toggle */
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.toggle-text {
+  font-size: 14px;
+}
+
+/* Navigation */
+.navbar {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #222;
+}
+.logo {
+  font-size: 30px;
+  color: #00bcd4;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 40px;
+  background: #0a0a0a;
+}
+.intro-text {
+  flex: 1;
+  padding-right: 40px;
+}
+.intro-text h1 {
+  font-size: 40px;
+  color: #00bcd4;
+}
+.intro-text p {
+  font-size: 28px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+.highlight {
+  color: #03dac6;
+  font-weight: 600;
+}
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #00bcd4;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.btn:hover {
+  background: #0288d1;
+}
+.hero-image img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 188, 212, 0.3);
+}
+
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 60px 40px;
+  gap: 30px;
+  background: #111;
+}
+.about-icon img {
+  width: 80px;
+}
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  color: #03dac6;
+}
+.about-text p {
+  line-height: 1.6;
+  font-size: 25px;
+}
+
+/* Skills */
+
+.skills {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #121212; /* dark section bg for contrast */
+  color: #fff;
+}
+
+.skills h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #00bcd4;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px;
+}
+
+.skill-list li {
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #e0e0e0;
+  transition: transform 0.2s ease;
+}
+
+.skill-list li:hover {
+  transform: scale(1.05);
+  background-color: #00bcd4;
+}
+
+/* Projects */
+.projects {
+  padding: 60px 40px;
+  background: #111;
+}
+.projects h2 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: #00bcd4;
+  text-align: center;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #1a1a1a;
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s ease;
+}
+.project-card:hover {
+  border-color: #00bcd4;
+  transform: translateY(-5px);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+.project-card h3 {
+  color: #03dac6;
+  margin-top: 10px;
+}
+.project-card p {
+  font-size: 14px;
+  margin-top: 6px;
+  color: #ccc;
+}
+/* Resume */
+.resume-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* Contact */
+#contact {
+  padding: 60px 40px;
+  background: #0a0a0a;
+  text-align: center;
+}
+#contact h2 {
+  font-size: 26px;
+  color: #00bcd4;
+}
+#contact .icons p {
+  margin: 10px 0;
+}
+#contact a {
+  color: #87ceeb;
+  text-decoration: none;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+#contact p:last-child {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+/* Scroll To Top */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  padding: 10px 14px;
+  font-size: 20px;
+  background-color: #00bcd4;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+}
+#scrollToTopBtn:hover {
+  background-color: #0288d1;
+}
+
+/* Dark mode class toggle */
+.dark-mode {
+  background-color: #000;
+  color: #e0e0e0;
+}
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+  }
+
+  .intro-text p {
+    font-size: 16px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .about-icon img {
+    margin: 0 auto 20px;
+  }
+
+  .projects {
+    padding: 30px 10px;
+  }
+
+  .project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  footer h2 {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+
+  #contact {
+    padding: 30px 10px;
+  }
+
+  #contact h2 {
+    font-size: 26px;
+  }
+
+  #contact .icons p {
+    font-size: 16px;
+  }
+
+  #contact p:last-child {
+    font-size: 16px;
+  }
+}
